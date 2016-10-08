@@ -55,6 +55,7 @@ Build-Depends: cmake (>= 2.8.12~),
                libkf5incidenceeditor-dev (>= 5.2.0~),
                libkf5itemviews-dev (>= 5.16.0~),
                libkf5kaddressbookgrantlee-dev (>= 5.2.0~),
+               libkf5kaddressbookimportexport-dev (>= 5.2.0~),
                libkf5kcmutils-dev (>= 5.19.0~),
                libkf5kdelibs4support-dev (>= 5.19.0~),
                libkf5kdepimdbusinterfaces-dev,
@@ -119,7 +120,7 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-kde/applications/kaddressbook.git
 Package: kaddressbook
 Section: utils
 Architecture: any
-Breaks:  kdepim-doc
+Breaks: kdepim-doc
 Replaces: kdepim-doc
 Depends: libkf5akonadisearch-bin,
          libkf5akonadisearch-plugins,
