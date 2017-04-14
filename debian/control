@@ -105,10 +105,10 @@ Build-Depends: cmake (>= 2.8.12~),
                libx11-dev,
                pkg-config,
                pkg-kde-tools (>= 0.12),
-               qtwebengine5-dev | libqt5webengine5-dev,
                qtbase5-dev (>= 5.5.0~),
                qtdeclarative5-dev (>= 5.4.0~),
                qttools5-dev (>= 5.5.0~),
+               qtwebengine5-dev | libqt5webengine5-dev,
                shared-mime-info,
                xsltproc,
                zlib1g-dev
@@ -120,8 +120,8 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-kde/applications/kaddressbook.git
 Package: kaddressbook
 Section: utils
 Architecture: any
-Breaks: kontact (<< 4:16.11)
-Replaces: kontact (<< 4:16.11)
+Breaks: kontact (<< 4:16.11), ${kde-l10n:all}
+Replaces: kontact (<< 4:16.11), ${kde-l10n:all}
 Depends: libkf5akonadisearch-bin,
          libkf5akonadisearch-plugins,
          ${misc:Depends},
