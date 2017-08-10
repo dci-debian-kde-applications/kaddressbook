@@ -43,7 +43,6 @@ Build-Depends: cmake (>= 2.8.12~),
                libkf5dnssd-dev (>= 5.19.0~),
                libkf5eventviews-dev (>= 5.2.0~),
                libkf5followupreminder-dev (>= 5.2.0~),
-               libkf5gapi-dev (>= 5.1~),
                libkf5globalaccel-dev (>= 5.19.0~),
                libkf5grantleetheme-dev (>= 5.2.0~),
                libkf5gravatar-dev (>= 5.2.0~),
@@ -96,6 +95,7 @@ Build-Depends: cmake (>= 2.8.12~),
                libkf5windowsystem-dev (>= 5.16.0~),
                libkf5xmlgui-dev (>= 5.16.0~),
                libkf5xmlrpcclient-dev (>= 5.2.0~),
+               libkpimgapi-dev (>= 5.1~),
                libphonon4qt5-dev,
                libphonon4qt5experimental-dev,
                libqt5opengl5-dev (>= 5.5.0~),
@@ -105,10 +105,10 @@ Build-Depends: cmake (>= 2.8.12~),
                libx11-dev,
                pkg-config,
                pkg-kde-tools (>= 0.12),
-               qtwebengine5-dev | libqt5webengine5-dev,
                qtbase5-dev (>= 5.5.0~),
                qtdeclarative5-dev (>= 5.4.0~),
                qttools5-dev (>= 5.5.0~),
+               qtwebengine5-dev | libqt5webengine5-dev,
                shared-mime-info,
                xsltproc,
                zlib1g-dev
@@ -120,8 +120,8 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-kde/applications/kaddressbook.git
 Package: kaddressbook
 Section: utils
 Architecture: any
-Breaks: kontact (<< 4:16.11)
-Replaces: kontact (<< 4:16.11)
+Breaks: kontact (<< 4:16.11), ${kde-l10n:all}
+Replaces: kontact (<< 4:16.11), ${kde-l10n:all}
 Depends: libkf5akonadisearch-bin,
          libkf5akonadisearch-plugins,
          ${misc:Depends},
