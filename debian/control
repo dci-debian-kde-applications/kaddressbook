@@ -18,6 +18,7 @@ Build-Depends: cmake (>= 3.1~),
                libkf5dbusaddons-dev (>= 5.35.0~),
                libkf5doctools-dev (>= 5.35.0~),
                libkf5grantleetheme-dev (>= 17.08~),
+               libkf5imap-dev (>= 17.08~),
                libkf5kaddressbookgrantlee-dev (>= 4:17.08~),
                libkf5kaddressbookimportexport-dev (>= 4:17.08~),
                libkf5kcmutils-dev (>= 5.35.0~),
@@ -27,7 +28,6 @@ Build-Depends: cmake (>= 3.1~),
                libkf5libkleo-dev (>= 4:17.08~),
                libkf5pimcommon-dev (>= 4:17.08~),
                libkf5pimtextedit-dev (>= 17.08~),
-               libkf5imap-dev (>= 17.08~),
                pkg-config,
                pkg-kde-tools (>= 0.12),
                qtbase5-dev (>= 5.7.0~),
@@ -39,14 +39,8 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-kde/applications/kaddressbook.git
 Package: kaddressbook
 Section: utils
 Architecture: any
-Breaks: kde-l10n-ast (<< 4:17.03.90-0~),
-        kde-l10n-eo (<< 4:17.03.90-0~),
-        kontact (<< 4:16.11),
-        ${kde-l10n:all},
-Replaces: kde-l10n-ast (<< 4:17.03.90-0~),
-          kde-l10n-eo (<< 4:17.03.90-0~),
-          kontact (<< 4:16.11),
-          ${kde-l10n:all},
+Breaks: kontact (<< 4:16.11), ${kde-l10n:all}
+Replaces: kontact (<< 4:16.11), ${kde-l10n:all}
 Depends: libkf5akonadisearch-bin,
          libkf5akonadisearch-plugins,
          ${misc:Depends},
